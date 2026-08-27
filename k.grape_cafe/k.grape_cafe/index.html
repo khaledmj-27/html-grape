@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GRAPE | عنب Café </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>عنب <span>GRAPE</span></h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<div id="home" class="hero">
+    <div>
+        <p>WELCOME TO</p>
+        <h1>GRAPE <span>CAFÉ</span></h1>
+        <p>A simple place for good drinks and good moments.</p>
+        <a class="btn" href="#menu">View Menu</a>
+    </div>
+</div>
+
+<div id="about" class="section about">
+    <div class="photo">
+        <img src="gph.jpg" alt="GRAPE Café">
+    </div>
+
+    <div>
+        <p class="title">ABOUT US</p>
+        <h2>Welcome to <span>GRAPE</span></h2>
+
+        <p>
+            GRAPE Café is a comfortable place to enjoy fresh drinks,
+            desserts and special moments with friends.
+        </p>
+
+        <ul>
+            <li>Fresh drinks</li>
+            <li>Delicious desserts</li>
+            <li>Comfortable atmosphere</li>
+        </ul>
+    </div>
+</div>
+
+<div id="menu" class="section">
+    <div class="heading">
+        <p class="title">OUR MENU</p>
+        <h2>Choose Your <span>Favorite</span></h2>
+    </div>
+
+    <div class="buttons">
+        <button onclick="showMenu('all')">All</button>
+        <button onclick="showMenu('mocktail')">Mocktails</button>
+        <button onclick="showMenu('juice')">Juices</button>
+        <button onclick="showMenu('dessert')">Desserts</button>
+        <button onclick="showMenu('shisha')">Shisha</button>
+    </div>
+
+    <div class="menu">
+
+        <div class="item mocktail">
+            <h3>Grape Mocktail</h3>
+            <p>موكتيل العنب</p>
+            <b>3.50 JD</b>
+        </div>
+
+        <div class="item mocktail">
+            <h3>Blue Wave</h3>
+            <p>بلو ويف</p>
+            <b>3.50 JD</b>
+        </div>
+
+        <div class="item mocktail">
+            <h3>Pomegranate Cosmo</h3>
+            <p>كوزمو الرمان</p>
+            <b>3.50 JD</b>
+        </div>
+
+        <div class="item mocktail">
+            <h3>Passion Fruit</h3>
+            <p>باشن فروت</p>
+            <b>3.50 JD</b>
+        </div>
+
+        <div class="item juice">
+            <h3>Orange</h3>
+            <p>برتقال</p>
+            <b>3.00 JD</b>
+        </div>
+
+        <div class="item juice">
+            <h3>Lemon & Mint</h3>
+            <p>ليمون ونعنع</p>
+            <b>3.25 JD</b>
+        </div>
+
+        <div class="item juice">
+            <h3>Mango</h3>
+            <p>مانجو</p>
+            <b>3.50 JD</b>
+        </div>
+
+        <div class="item juice">
+            <h3>Banana & Milk</h3>
+            <p>موز وحليب</p>
+            <b>3.50 JD</b>
+        </div>
+
+        <div class="item juice">
+            <h3>Strawberry & Milk</h3>
+            <p>فراولة وحليب</p>
+            <b>3.00 JD</b>
+        </div>
+
+        <div class="item dessert">
+            <h3>Brownies</h3>
+            <p>براونيز</p>
+            <b>2.00 JD</b>
+        </div>
+
+        <div class="item dessert">
+            <h3>Cookies</h3>
+            <p>كوكيز</p>
+            <b>1.00 JD</b>
+        </div>
+
+        <div class="item dessert">
+            <h3>Tiramisu</h3>
+            <p>تيراميسو</p>
+            <b>3.75 JD</b>
+        </div>
+
+        <div class="item dessert">
+            <h3>Chocolate Cake</h3>
+            <p>تشوكلت كيك</p>
+            <b>3.00 JD</b>
+        </div>
+
+        <div class="item dessert">
+            <h3>Cookies Cake</h3>
+            <p>كوكيز كيك</p>
+            <b>3.00 JD</b>
+        </div>
+
+        <div class="item shisha">
+            <h3>Grape</h3>
+            <p>عنب</p>
+            <b>4.50 JD</b>
+        </div>
+
+        <div class="item shisha">
+            <h3>2 Apples</h3>
+            <p>تفاحتين</p>
+            <b>4.50 JD</b>
+        </div>
+
+        <div class="item shisha">
+            <h3>Gum & Mint</h3>
+            <p>علكة ونعنع</p>
+            <b>4.50 JD</b>
+        </div>
+
+        <div class="item shisha">
+            <h3>Lemon & Mint</h3>
+            <p>ليمون ونعنع</p>
+            <b>4.50 JD</b>
+        </div>
+
+        <div class="item shisha">
+            <h3>Watermelon & Mint</h3>
+            <p>بطيخ ونعنع</p>
+            <b>4.50 JD</b>
+        </div>
+
+        <div class="item shisha">
+            <h3>Grapes & Berries</h3>
+            <p>عنب وتوت</p>
+            <b>4.50 JD</b>
+        </div>
+
+        <div class="item shisha">
+            <h3>Blue Berries</h3>
+            <p>بلو بيري</p>
+            <b>4.50 JD</b>
+        </div>
+
+        <div class="item shisha">
+            <h3>Special</h3>
+            <p>سبيشال</p>
+            <b>4.50 JD</b>
+        </div>
+
+        <div class="item shisha">
+            <h3>Refill</h3>
+            <p>رأس إضافي</p>
+            <b>2.00 JD</b>
+        </div>
+
+    </div>
+</div>
+
+<div id="gallery" class="section">
+    <div class="heading">
+        <p class="title">GALLERY</p>
+        <h2>Our <span>Atmosphere</span></h2>
+    </div>
+
+    <div class="gallery">
+        <img src="photo1.jpg" alt="Café">
+        <img src="photo3.jpg" alt="Café">
+        <img src="photo4.jpg" alt="Café">
+        <img src="photo7.jpg" alt="Café">
+    </div>
+</div>
+
+
+
+
+<div class="">
+    <h2>Experience <span>GRAPE</span></h2>
+    
+<div class="gallery">
+        <img src="photo2.jpg" alt="Café">
+        <img src="photo5.jpg" alt="Café">
+        <img src="photo6.jpg" alt="Café">
+        <img src="photo8.jpg" alt="Café">
+    </div>
+</div>
+
+
+</div>
+
+<div class="section">
+    <div class="heading">
+        <p class="title">OPENING HOURS</p>
+        <h2>Visit <span>Us</span></h2>
+    </div>
+
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Opening</th>
+            <th>Closing</th>
+        </tr>
+        <tr><td>Saturday</td><td>8:00 AM</td><td>12:00 AM</td></tr>
+        <tr><td>Sunday</td><td>8:00 AM</td><td>12:00 AM</td></tr>
+        <tr><td>Monday</td><td>8:00 AM</td><td>12:00 AM</td></tr>
+        <tr><td>Tuesday</td><td>8:00 AM</td><td>12:00 AM</td></tr>
+        <tr><td>Wednesday</td><td>8:00 AM</td><td>12:00 AM</td></tr>
+        <tr><td>Thursday</td><td>8:00 AM</td><td>12:00 AM</td></tr>
+        <tr><td>Friday</td><td>8:00 AM</td><td>12:00 AM</td></tr>
+    </table>
+</div>
+
+<div id="contact" class="contact">
+
+    <div>
+        <p class="title">CONTACT</p>
+        <h2>Visit <span>GRAPE</span></h2>
+        <p> 'Al nafora mall 'Aqaba, Jordan</p>
+        <p>07X XXX XXXX</p>
+        <p>Instagram | Facebook</p>
+    </div>
+
+    <form onsubmit="sendForm(event)">
+
+        <label>Name</label>
+        <input type="text" id="name" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Message</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Send</button>
+
+        <p id="message"></p>
+
+    </form>
+
+</div>
+
+</main>
+
+<footer>
+    <h2>عنب <span>GRAPE</span></h2>
+    <p>Good drinks. Good moments.</p>
+    <p>© 2026 GRAPE Café</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

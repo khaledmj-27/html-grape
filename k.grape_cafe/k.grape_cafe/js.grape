@@ -1,0 +1,37 @@
+function showMenu(type) {
+
+    let items = document.querySelectorAll(".item");
+
+    items.forEach(function(item) {
+
+        if (type == "all" || item.classList.contains(type)) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+
+    });
+}
+
+function sendForm(event) {
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+
+    document.getElementById("message").innerHTML =
+        "Thank you, " + name + "! Your message was sent.";
+}
+
+function greeting() {
+
+    let hour = new Date().getHours();
+
+    if (hour < 12) {
+        document.getElementById("greeting").innerHTML = "Good Morning";
+    } else {
+        document.getElementById("greeting").innerHTML = "Good Evening";
+    }
+}
+
+greeting();
